@@ -14,12 +14,12 @@ class Student:
         print("Time to study\n" + "=" * 15)
         self.proc += randint(3, 7)
         self.happy -= randint(1, 3)
-        self.money -= randint(5, 15)
+
 
     def sleep(self):
         print("Time to sleep\n" + "=" * 15)
         self.happy += randint(1, 5)
-        self.money -= randint(1, 5)
+
 
     def relax(self):
         print("Time to relax\n" + "=" * 15)
