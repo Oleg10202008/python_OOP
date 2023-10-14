@@ -1,56 +1,122 @@
-from random import randint, choice
-
-class Tree:
-    def __init__(self, age=0, color="Green", height=200, name="Dub"):
-        self.age = age
-        self.color = color
-        self.height = height
-        self.name = name
-
-    def every_day(self):
-        self.age += 1
-        self.height += randint(5, 10)
-        print("Age:", self.age)
-        print("Height:", self.height)
-        print("Color:", self.color)
-
-    def run_a_month(self):
-        for day in range(30):
-            print("\nDay", day + 1)
-            self.every_day()
-
-class Fruti_Tree(Tree):
-    def __init__(self, age=0, color="Yellow", height=150, name="Plodovoe", plod="apple"):
-        super().__init__(age, color, height, name)
-        self.plod = plod
-
-    def fruit_every_day(self):
-        self.age += 1
-        self.height += randint(3, 7)
-        self.plod = choice(plod_list)
-        print("Age:", self.age)
-        print("Height:", self.height)
-        print("Color:", self.color)
-        print("Name:", self.name)
-        print("Fruit:", self.plod)
-
-    def fruit_run_a_month(self):
-        for day in range(30):
-            print("\nDay", day + 1)
-            self.fruit_every_day()
-
-plod_list = ["apple", "plum", "pear"]
-
-tree = Tree()
-tree.run_a_month()
-
-fruit_tree = Fruti_Tree()
-fruit_tree.fruit_run_a_month()
+class Bank:
 
 
+def __init__(self, name, initial_balance=0):
+    self.name = name
+    self.balance = initial_balance
+    self.transaction_history = []
+
+    self.name = name
+    self.balance = initial_balance
+    self.transaction_history = []
+
+    self.name = name
+    self.balance = initial_balance
+
+    self.name = name
+    self.balance = initial
+
+    self.name = name
+
+    self.name = name
 
 
+def deposit(self, amount):
+    if amount > 0:
+        self.balance += amount
+        self.transaction_history.append(
+            self.balance += amount
+        self.transaction_history.append
+
+        self.balance += amount
+        self.transaction
+
+        self.balance += amount
+
+        self.balance
+        f"Deposited {amount} UAH")
+
+        else:
 
 
+        raise ValueError("Invalid deposit amount")
 
+        def withdraw(self, amount):
+
+        if amount > 0 and amount <= self.balance:
+            self.balance -= amount
+            self.transaction_history.append(
+                self.balance -= amount
+            self.transaction_history.append(f
+
+            self.balance -= amount
+            self.transaction
+
+            self.balance -= amount
+
+            f"Withdrew {amount} UAH")
+
+            else:
+            raise ValueError("Invalid withdrawal amount or insufficient funds")
+
+        def get_balance(self):
+            return self.balance
+
+        def get_transaction_history(self):
+            return self.transaction_history
+
+        def run(bank):
+            var =
+            var
+
+        int(input(
+            "Выберите вариант операции\n1 - депозит\n2 - снять деньги\n3 - посмотреть баланс\n4 - история транзакций: "))
+
+        if var == 1:
+            amount =
+            amount
+    int(input("Введите суму депозита: "))
+    bank.deposit(amount)
+
+    bank.de
+
+    bank
+    elif var == 2:
+    amount =
+    amount
+    int(input("Введите суму, которую хотите снять: "))
+    bank.withdraw(amount)
+
+    bank.withdraw(amount)
+
+    bank.withdraw
+
+    elif var == 3:
+    balance = bank.get_balance()
+
+    balance = bank.get_balance()
+
+    balance = bank
+
+    print(f"Баланс: {balance} UAH")
+
+    elif var == 4:
+    history = bank.get_transaction_history()
+
+    history = bank.get_transaction_history()
+
+    history = bank.get_transaction
+
+    history
+    print("История транзакций:")
+    for transaction in history:
+        print(transaction)
+
+    # Create a Bank instance
+    my_bank = Bank(
+
+    "My Bank")
+
+    # Run the banking application
+    run(my_bank)
 
